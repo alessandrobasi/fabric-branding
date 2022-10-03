@@ -1,11 +1,19 @@
 package net.logandark.branding;
 
-public class Branding {
-	public static String getClientBrand() {
-		return "vanilla";
+import net.fabricmc.api.ModInitializer;
+import net.logandark.branding.config.ConfigManager;
+
+public class Branding implements ModInitializer {
+
+	public final ConfigManager configManager;
+
+	public Branding() {
+		configManager = new ConfigManager();
+
+	}
+	@Override
+	public void onInitialize() {
+
 	}
 
-	public static String getServerBrand() {
-		return "vanilla";
-	}
 }

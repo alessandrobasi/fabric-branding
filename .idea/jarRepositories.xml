@@ -31,5 +31,20 @@
       <option name="name" value="Mojang" />
       <option name="url" value="https://libraries.minecraft.net/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.terraformersmc.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.terraformersmc.com/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.shedaniel.me/" />
+    </remote-repository>
   </component>
 </project>

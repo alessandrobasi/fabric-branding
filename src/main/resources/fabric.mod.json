@@ -18,13 +18,21 @@
 	"icon": "assets/branding/icon.png",
 
 	"environment": "*",
-	"entrypoints": {},
+	"entrypoints": {
+		"main": [
+			"net.logandark.branding.Branding"
+		],
+		"modmenu": [
+			"net.logandark.branding.config.MenuInteg"
+		]
+	},
 
 	"mixins": ["branding.mixins.json"],
 
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": "1.19.x"
+		"minecraft": "1.19.2",
+		"cloth-config2": ">=8.0"
 	},
 	"suggests": {}
 }
