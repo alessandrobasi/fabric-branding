@@ -16,7 +16,7 @@ public class MenuInteg implements ModMenuApi {
 
 			ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
-			builder.getOrCreateCategory(Text.of("TODO"))
+			builder.getOrCreateCategory(Text.of("Category"))
 
 				.addEntry(entryBuilder.startStrField(Text.of("Brand"), ConfigManager.getConfig().getBrand())
 					.setDefaultValue("vanilla")
