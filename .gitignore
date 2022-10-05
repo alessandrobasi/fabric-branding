@@ -11,3 +11,7 @@
 /run_server/*
 !/run_server/eula.txt
 /minecraft/
+/.idea/
+/gradle/
+/run/
+/run_server/

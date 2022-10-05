@@ -5,6 +5,10 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.impl.util.log.Log;
+import net.fabricmc.loader.impl.util.log.LogCategory;
+import net.minecraft.client.MinecraftClient;
+import org.apache.commons.logging.impl.Log4JLogger;
 
 import java.io.File;
 import java.io.FileReader;
@@ -60,10 +64,11 @@ public class ConfigManager {
 		File fconf = path.resolve(FILENAME).toFile();
 		Gson gson = new Gson();
 		try(FileReader fr = new FileReader(fconf)) {
-
 			config = gson.fromJson(new JsonReader(fr), Config.class);
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			e.printStackTrace();
+			config = new Config();
+			Log.warn(LogCategory.LOG, "Error in json config, lodded default value");
 		}
 
 	}
